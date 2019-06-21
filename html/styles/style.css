@@ -1,0 +1,276 @@
+/* for the navigation bar */
+*{
+    margin:0;
+    padding:0;
+    font-family: verdana;
+}
+.navbar{
+    width: 100%;
+    height: 100vh;
+    background-image: url(/Images/lencha.jpg);
+    background-size: cover;
+}
+.navbar .hide{
+    transform: translateY(-100%);
+}
+.navbar .logo{
+    position: relative;
+}
+.navbar nav{
+    width: 100%;
+    height: 80px;
+    background-color: #0003;
+    line-height: 80px;
+    position: fixed;
+}
+.navbar nav ul{
+    float: right;
+    margin-right: 30px;
+    display: flex;
+    text-align: center;
+}
+.navbar nav ul li{
+    list-style-type: none;
+    display: inline-block;
+}
+.navbar nav ul li:hover{
+    background-color: #a2e790;
+    transition:0.8s all;
+}
+.navbar nav ul li a{
+    text-decoration: none;
+    color: #fff;
+    padding: 0 30px;
+    text-transform: uppercase;
+}
+/*for the image gallery*/
+.gallery{
+    margin: 0 5%;
+    background-color: #736F6E;
+    padding: 1%;
+
+}
+.gallerytotal{
+    background-color: #848482;
+}
+.gallery img{
+    transition: 1s;
+    padding: 15px;
+    width: 200px;
+    height:250px;
+}
+
+.gallery img:hover{
+    filter: blur(120%);
+    transform:scale(1.2);
+}
+#gallery{
+    color: #fff
+}
+#galtext{
+    font-size: 25px;
+    margin: 0 3% 2% 3%;
+    text-indent: 4%;
+    color: #fff
+}
+/* for the paragraph */
+.personal{
+    background-color: darkgrey;   
+}
+h2{
+    
+    text-align: center;
+    margin: 0 5% 1% 5%;
+    padding: 2%;
+    font-size: 40px;
+}
+h2::first-letter{
+    font-size: 60px;
+}
+
+.personal p{
+    margin: 0 5% 0 9%;
+    font-size: 30px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+#intro,#lang,#role{
+    font-size: 30px;
+    -webkit-text-fill-color: #ffffff;
+    
+}
+h6{
+    font-size: 30px;
+    margin: 0 5%;
+}
+h5{
+    font-size: 35px;
+    margin: 0 3% ;
+    
+}
+.experience{
+    background-color: darkgray;
+}
+#experience{
+    color: #fff;
+}
+#Elecbelow{
+    margin-bottom: 2%;
+    
+}
+.experience #prointro{
+    font-style: italic;
+    font-size: 20px;
+    margin: 0 3% 1%;
+}
+.library p,.election p{
+    font-size: 30px;
+    margin:0 7% ;
+    text-indent: 2%;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.expTable{
+    border-collapse: collapse;
+    margin: 25px 0;
+    font-size: 20px;
+    min-width: 400px;
+    
+}
+
+
+.expTable thead tr{
+    background-color: blue;
+    color: #ffffff;
+    text-align: left;
+    font-weight: bold;
+}
+.expTable th,.expTable td{
+    padding: 12px 15px;
+    margin: 2px;
+
+}
+.expTable tbody tr{
+    border-bottom: 1px solid #357ec7;
+    border-right: 1px solid #dddddd;
+    border-left: 1px solid #dddddd;
+    border-spacing: 5%;
+    }
+.expTable tbody tr:nth-of-type(even){
+    background-color: #f3f3f3;
+}
+#tablehead{
+    font-style: italic;
+    font-size: 25px;
+    margin: 0 25px;
+    text-align: center;
+}
+.table{
+    margin: 0 15% 10px;
+    
+}
+.group img{
+    height: 275px;
+    width: 600px;
+    margin: 0 4%;
+}
+/* experience table
+.experience .exptable{
+    float: left;
+    width: 30%;
+    padding: 8px;
+    box-sizing: border-box;
+    
+}
+.experience .box{
+    background: #fff;
+    color: #555;
+    list-style-type: none;
+    border: 1px solid #555;
+    margin:0;
+    padding: 0;
+    transition: 0.3s;
+
+}
+.experience .pox:hover{
+    box-shadow: 0 10px 0 #000;
+}
+.experience .box .header{
+    background-color: rgb(129, 241, 135);
+    color:#fff;
+    font-size: 25px;
+
+}
+.experience .box li{
+    padding: 20px;
+    border-bottom: 1px solid #eee;
+    text-align: center;
+}
+/* contact information */
+.contact{
+    background-color: #2c3539;
+    margin: 0 0 0 0;
+}
+/* Style all font awesome icons */
+.fa {
+    padding: 20px;
+    font-size: 30px;
+    width: 30px;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 50%;
+  }
+  
+  /* hover effect  */
+  .fa:hover {
+    opacity: 0.7;
+  }
+
+  .fa-facebook {
+    background: #3B5998;
+    color: white;
+  }
+  .fa-google {
+    background: #dd4b39;
+    color: white;
+  }
+  .fa-linkedin {
+    background: #007bb5;
+    color: white;
+  }
+  
+  .fa-youtube {
+    background: #bb0000;
+    color: white;
+  }
+  .fa-instagram {
+    background: #125688;
+    color: white;
+  }
+  .social{
+    margin: 0 5% 2% 2%;
+  }
+  #abovesocial{
+      font-size: 20px;
+      margin-left: 4%;
+      margin-top: 3%;
+      margin-bottom: 1%;
+      color: #fff;
+  }
+  .contactInner #feedback{
+      float: right;
+      margin-right: 4%;
+      margin-left: 20%;
+      font-style: italic;
+      font-size: 25px;
+      color: #fff;
+
+  }
+  #continfo{
+      color: #ffff;
+  }
+  .contactInner p #aa{
+    color: #fff;
+    margin: 0 3% 2%;
+}
+
+
+
